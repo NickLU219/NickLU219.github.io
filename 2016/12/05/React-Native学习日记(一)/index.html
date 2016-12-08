@@ -19,7 +19,9 @@
     <meta name="description" content="由于本人开发的机器是MacBook，因此之后所提及的内容基本上只涉及在Mac下的操作，如需要更多内容介绍以及文档内容，请移步React-Native中文网。
 
 环境搭建在Mac上安装环境实在是很简单的事情
-Homebrew第一步，你需要安装Homebrew，是一个Mac系统下的包管理器，熟悉cocoapods的人应该很容易理解这个概念，安装过程只需一句话:1/usr/bin/ruby -e ...">
+Homebrew第一步，你需要安装Homebrew，是一个Mac系统下的包管理器，熟悉cocoapods的人应该很容易理解这个概念，安装过程只需一句话:
+
+1/usr/bin/ruby -...">
   
   <title>React-Native学习日记(一) [ Dreamlize ]</title>
   
@@ -127,7 +129,7 @@ Homebrew第一步，你需要安装Homebrew，是一个Mac系统下的包管理�
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2016-12-05</span>
       
-        <span id = "post-title-updated">修改于 2016-12-05</span>
+        <span id = "post-title-updated">修改于 2016-12-08</span>
       
       
       <span id = "post-title-categories">分类
@@ -146,17 +148,38 @@ Homebrew第一步，你需要安装Homebrew，是一个Mac系统下的包管理�
 <p>由于本人开发的机器是MacBook，因此之后所提及的内容基本上只涉及在Mac下的操作，如需要更多内容介绍以及文档内容，请移步<a href="http://reactnative.cn/docs/0.39/getting-started.html" target="_blank" rel="external">React-Native中文网</a>。</p>
 </blockquote>
 <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>在Mac上安装环境实在是很简单的事情</p>
-<h3 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h3><p>第一步，你需要安装Homebrew，是一个Mac系统下的包管理器，熟悉cocoapods的人应该很容易理解这个概念，安装过程只需一句话:<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e "$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster<span class="regexp">/install)"</span></div></pre></td></tr></table></figure></p>
+<h3 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h3><p>第一步，你需要安装Homebrew，是一个Mac系统下的包管理器，熟悉cocoapods的人应该很容易理解这个概念，安装过程只需一句话:</p>
+<blockquote>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/usr/</span>bin<span class="regexp">/ruby -e "$(curl -fsSL https:/</span><span class="regexp">/raw.githubusercontent.com/</span>Homebrew<span class="regexp">/install/m</span>aster<span class="regexp">/install)"</span></div></pre></td></tr></table></figure>
+</blockquote>
 <p><br></p>
-<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><p>接下来使用安装好的Homebrew安装Node.js:<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install <span class="keyword">node</span><span class="title"></span></div></pre></td></tr></table></figure></p>
-<p>接下来的步骤由于某些原因，请使用科学上网工具继续，或者替代方案是设置npm的镜像:<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> config set registry https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org --<span class="built_in">global</span></div><div class="line"><span class="built_in">npm</span> config set disturl https:<span class="regexp">//</span><span class="built_in">npm</span>.taobao.org/dist --<span class="built_in">global</span></div></pre></td></tr></table></figure></p>
+<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><p>接下来使用安装好的Homebrew安装Node.js:</p>
+<blockquote>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install <span class="keyword">node</span><span class="title"></span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>接下来的步骤由于某些原因，请使用科学上网工具继续，或者替代方案是设置npm的镜像:</p>
+<blockquote>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> config set registry https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org --<span class="built_in">global</span></div><div class="line"><span class="built_in">npm</span> config set disturl https:<span class="regexp">//</span><span class="built_in">npm</span>.taobao.org/dist --<span class="built_in">global</span></div></pre></td></tr></table></figure>
+</blockquote>
 <p><br></p>
-<h3 id="Yarn、React-Native的命令行工具（react-native-cli）"><a href="#Yarn、React-Native的命令行工具（react-native-cli）" class="headerlink" title="Yarn、React Native的命令行工具（react-native-cli）:"></a>Yarn、React Native的命令行工具（react-native-cli）:</h3><p><a href="http://yarnpkg.com/" target="_blank" rel="external">Yarn</a>是Facebook提供的替代npm的工具，可以加速node模块的下载。React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> install -g yarn react-<span class="keyword">native</span>-cli</div></pre></td></tr></table></figure></p>
+<h3 id="Yarn、React-Native的命令行工具（react-native-cli）"><a href="#Yarn、React-Native的命令行工具（react-native-cli）" class="headerlink" title="Yarn、React Native的命令行工具（react-native-cli）:"></a>Yarn、React Native的命令行工具（react-native-cli）:</h3><p><a href="http://yarnpkg.com/" target="_blank" rel="external">Yarn</a>是Facebook提供的替代npm的工具，可以加速node模块的下载。React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。</p>
+<blockquote>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> install -g yarn react-<span class="keyword">native</span>-cli</div></pre></td></tr></table></figure>
+</blockquote>
 <p><br></p>
-<h3 id="Xcode"><a href="#Xcode" class="headerlink" title="Xcode"></a>Xcode</h3><p>React-Native需要Xcode7.0以上版本，请自行前往AppStore下载安装，<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">由于开发需要，请同时确认本机中git等的版本</div><div class="line">$ apm <span class="comment">--version</span></div></pre></td></tr></table></figure></p>
+<h3 id="Xcode"><a href="#Xcode" class="headerlink" title="Xcode"></a>Xcode</h3><p>React-Native需要Xcode7.0以上版本，请自行前往AppStore下载安装，</p>
+<blockquote>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">由于开发需要，请同时确认本机中git等的版本</div><div class="line">$ apm <span class="comment">--version</span></div></pre></td></tr></table></figure>
+</blockquote>
 <p><br></p>
-<h3 id="还有其他一些推荐安装的工具"><a href="#还有其他一些推荐安装的工具" class="headerlink" title="还有其他一些推荐安装的工具"></a>还有其他一些推荐安装的工具</h3><h4 id="Watchman"><a href="#Watchman" class="headerlink" title="Watchman"></a>Watchman</h4><p><a href="https://facebook.github.io/watchman/docs/install.html" target="_blank" rel="external">Watchman</a>是由Facebook提供的监视文件系统变更的工具。安装此工具可以提高开发时的性能（packager可以快速捕捉文件的变化从而实现实时刷新）。<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">brew </span><span class="keyword">install </span>watchman</div></pre></td></tr></table></figure></p>
-<h4 id="Flow"><a href="#Flow" class="headerlink" title="Flow"></a>Flow</h4><p><a href="http://www.flowtype.org/" target="_blank" rel="external">Flow</a>是一个静态的JS类型检查工具。译注：你在很多示例中看到的奇奇怪怪的冒号问号，以及方法参数中像类型一样的写法，都是属于这个flow工具的语法。这一语法并不属于ES标准，只是Facebook自家的代码规范。所以新手可以直接跳过（即不需要安装这一工具，也不建议去费力学习flow相关语法）。<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">brew </span><span class="keyword">install </span>flow</div></pre></td></tr></table></figure></p>
+<h3 id="还有其他一些推荐安装的工具"><a href="#还有其他一些推荐安装的工具" class="headerlink" title="还有其他一些推荐安装的工具"></a>还有其他一些推荐安装的工具</h3><h4 id="Watchman"><a href="#Watchman" class="headerlink" title="Watchman"></a>Watchman</h4><p><a href="https://facebook.github.io/watchman/docs/install.html" target="_blank" rel="external">Watchman</a>是由Facebook提供的监视文件系统变更的工具。安装此工具可以提高开发时的性能（packager可以快速捕捉文件的变化从而实现实时刷新）。</p>
+<blockquote>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">brew </span><span class="keyword">install </span>watchman</div></pre></td></tr></table></figure>
+</blockquote>
+<h4 id="Flow"><a href="#Flow" class="headerlink" title="Flow"></a>Flow</h4><p><a href="http://www.flowtype.org/" target="_blank" rel="external">Flow</a>是一个静态的JS类型检查工具。译注：你在很多示例中看到的奇奇怪怪的冒号问号，以及方法参数中像类型一样的写法，都是属于这个flow工具的语法。这一语法并不属于ES标准，只是Facebook自家的代码规范。所以新手可以直接跳过（即不需要安装这一工具，也不建议去费力学习flow相关语法）。</p>
+<blockquote>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">brew </span><span class="keyword">install </span>flow</div></pre></td></tr></table></figure>
+</blockquote>
 <h4 id="Nuclide"><a href="#Nuclide" class="headerlink" title="Nuclide"></a>Nuclide</h4><p><a href="http://nuclide.io/" target="_blank" rel="external">Nuclide</a>（此链接需要科学上网）是由Facebook提供的基于atom的集成开发环境，可用于编写、<a href="http://nuclide.io/docs/platforms/react-native/#running-applications" target="_blank" rel="external">运行</a>和 <a href="http://nuclide.io/docs/platforms/react-native/#debugging" target="_blank" rel="external">调试</a>React Native应用。</p>
 <p>点击这里阅读<a href="http://nuclide.io/docs/quick-start/getting-started/" target="_blank" rel="external">Nuclide的入门文档</a>。</p>
 <h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>本文未尽事宜，请自行查阅<a href="http://reactnative.cn/docs/0.39/getting-started.html" target="_blank" rel="external">React-Native中文网</a></p>
