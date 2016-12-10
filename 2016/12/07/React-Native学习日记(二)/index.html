@@ -18,9 +18,8 @@
   
     <meta name="description" content="配置好本机环境过后，就只等我们正式打开RN的大门了。。RN基础部分涉及面较广，原文档介绍的也不是很详尽，因此博文也不会特别详细的讲述学习历程，有兴趣或者不了解的还是按照惯例，移步React-Native中文网。
 
-测试安装在终端输入以下命令就可以新建一个RN项目(&lt;ProjectName&gt;替换为你想要的项目名):
-
-1react-native init &lt;ProjectNa...">
+测试安装
+在终端输入以下命令就可以新建一个RN项目(&lt;ProjectName&gt;替换为你想要的项目名):1react-native init &lt;ProjectNam...">
   
   <title>React-Native学习日记(二) [ Dreamlize ]</title>
   
@@ -128,7 +127,7 @@
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2016-12-07</span>
       
-        <span id = "post-title-updated">修改于 2016-12-08</span>
+        <span id = "post-title-updated">修改于 2016-12-10</span>
       
       
       <span id = "post-title-categories">分类
@@ -146,21 +145,19 @@
     <blockquote>
 <p>配置好本机环境过后，就只等我们正式打开RN的大门了。。<br>RN基础部分涉及面较广，原文档介绍的也不是很详尽，因此博文也不会特别详细的讲述学习历程，有兴趣或者不了解的还是按照惯例，移步<a href="http://reactnative.cn/docs/0.39/getting-started.html" target="_blank" rel="external">React-Native中文网</a>。</p>
 </blockquote>
-<h2 id="测试安装"><a href="#测试安装" class="headerlink" title="测试安装"></a>测试安装</h2><p>在终端输入以下命令就可以新建一个RN项目(<code>&lt;ProjectName&gt;</code>替换为你想要的项目名):</p>
-<blockquote>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-<span class="keyword">native</span> init &lt;ProjectName&gt;</div></pre></td></tr></table></figure>
-</blockquote>
+<h2 id="测试安装"><a href="#测试安装" class="headerlink" title="测试安装"></a>测试安装</h2><blockquote>
+<p>在终端输入以下命令就可以新建一个RN项目(<code>&lt;ProjectName&gt;</code>替换为你想要的项目名):<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-<span class="keyword">native</span> init &lt;ProjectName&gt;</div></pre></td></tr></table></figure></p>
 <p>如果想存放在特定文件夹，请先cd进入所选路径目录下。</p>
 <p>初始化完成后，在路径下生成一个<code>&lt;ProjectName&gt;</code>的目录</p>
 <p><code>cd</code>进入目录之后，<code>open .</code>查看包结构。</p>
 <div align="center"><br><img src="/image/包结构.png" alt="包结构"><br></div>
 
 <p>运行方式有多种，推荐终端进入项目根目录下，输入<code>react-native run-ios</code>，自动调用Xcode模拟器。或者打开根路径下<code>ios</code>文件夹内的Xcode项目工程文件幷运行。</p>
-<h2 id="初步感受"><a href="#初步感受" class="headerlink" title="初步感受"></a>初步感受</h2><p>使用编辑器打开<code>index.ios.js</code>文件。</p>
-<blockquote>
-<p><code>import</code>部分为导入的React-Native以及React的组件。<br><code>class</code>部分为自定义组件，自定义了一个名为<code>helloworld</code>的组件，这个名称即是你一开始使用终端初始化项目时输入的<code>&lt;ProjectName&gt;</code>，其内使用的是<a href="http://www.tuicool.com/articles/r2IJNr" target="_blank" rel="external">JSX</a>语法。<br><code>style</code>部分是样式表，包含了所使用的所有样式。</p>
 </blockquote>
+<h2 id="初步感受"><a href="#初步感受" class="headerlink" title="初步感受"></a>初步感受</h2><blockquote>
+<p>使用编辑器打开<code>index.ios.js</code>文件。<br><code>import</code>部分为导入的React-Native以及React的组件。<br><code>class</code>部分为自定义组件，自定义了一个名为<code>helloworld</code>的组件，这个名称即是你一开始使用终端初始化项目时输入的<code>&lt;ProjectName&gt;</code>，其内使用的是<a href="http://www.tuicool.com/articles/r2IJNr" target="_blank" rel="external">JSX</a>语法。<br><code>style</code>部分是样式表，包含了所使用的所有样式。</p>
 <p>综上，对于接触过前端学习的开发人员，上手难度幷不大。<br>当然，你也可以尝试的简单修改<code>index.ios.js</code>的<code>class</code>和<code>style</code>部分，简单修改过后在模拟器中使用<code>cmd+R</code>刷新界面。</p>
+</blockquote>
 
   </article>
   <div class="random-toc-area">
