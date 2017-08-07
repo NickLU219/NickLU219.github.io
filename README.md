@@ -1,4 +1,4 @@
 # NickLU219.github.io
 My BLOG 
 
-redirect：  [NickLU219.github.io](NickLU219.github.io)
+redirect：  [NickLU219.github.io](http://NickLU219.github.io)
