@@ -1,0 +1,1 @@
+import{x as o}from"./index-om00KmGp.js";const t=t=>o.post("/extProp/listExtProp",t),p=t=>o.post("/extProp/enableProp",t),s=t=>o.post("/extProp/getExtProp",t),r=t=>o.post("/extProp/saveProp",t),e=t=>o.post("/extProp/sortProp",t);export{e as a,p as e,s as g,t as l,r as s};
