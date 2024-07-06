@@ -1,0 +1,1 @@
+import{x as t}from"./index-DlcaZKbg.js";const s=s=>t.post("/dict/getData",s),a=s=>t.post("/dict/getMeta",s),e=s=>t.post("/dict/listDict",s),i=s=>t.post("/dict/saveData",s),o=s=>t.post("/dict/saveMeta",s),c=s=>t.post("/dict/enableDict",s);export{a,i as b,c as e,s as g,e as l,o as s};
